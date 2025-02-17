@@ -1,0 +1,16 @@
+/*  Colours:
+    #f39c12 - Orange
+    #2c3e50 - Darker blue
+    #34495e - Dark blue
+    #2980b9 - Mid blue
+*/
+
+
+#map{
+    background: url(Images/StaticMap.webp); 
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 450px;
+}

@@ -24,6 +24,7 @@
                 </picture>
                 Happy Paws
             </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -42,6 +43,34 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- Modal Shopping cart -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shoppingCartModal">
+                <img src="Images/cart2.svg" alt="Image of a shopping cart" width="32" height="32"/>
+                <div id="cartCounter">0</div>
+            </button>
+            <div class="modal fade" id="shoppingCartModal" tabindex="-1" aria-labelledby="shoppingCartModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="shoppingCartModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="cart">
+                                <h2>Shopping Cart</h2>
+                                <ul id="cart-items"></ul>
+                                <p>Total: $<span id="total-price">0.00</span></p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -56,7 +85,8 @@
                     <h2>Where paws get happy</h2>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti et doloremque eaque sed officia
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti et doloremque eaque sed
+                        officia
                         eveniet
                         unde laudantium, itaque natus animi a distinctio aliquid, nemo iste! Nesciunt, maxime! Nesciunt,
                         cupiditate
@@ -67,11 +97,13 @@
                         adipisci
                         dignissimos culpa dolorem maxime hic quis illo illum pariatur officiis veniam rem iure fuga,
                         praesentium
-                        odit tempora, quos aut animi deserunt temporibus. Nihil non velit, earum assumenda quisquam tempora
+                        odit tempora, quos aut animi deserunt temporibus. Nihil non velit, earum assumenda quisquam
+                        tempora
                         officiis
                         doloribus quod veniam dolores architecto quos minima odio eaque officia ea quam vel mollitia.
                         Pariatur,
-                        eveniet? Veniam sit libero quibusdam reprehenderit quasi ipsa necessitatibus voluptatibus sunt ex
+                        eveniet? Veniam sit libero quibusdam reprehenderit quasi ipsa necessitatibus voluptatibus sunt
+                        ex
                         fugit
                         esse, asperiores vel rem, quo quisquam, autem nostrum corporis. Ea dolorem, voluptatibus alias
                         cupiditate
@@ -88,7 +120,10 @@
 
     <!-- FOOTER -->
     <footer class="bg-dark text-white text-center mt-5 mb-5 p-5">
-        <p>&copy; 2025 Happy Paws</p>
+        <div>
+            <p>&copy; 2025 Happy Paws</p>
+        </div>
+        <div id="ApiText"></div>
     </footer>
 
     <!-- SCRIPTS -->
