@@ -1,6 +1,6 @@
 function fetchHeaderAndFooter() {
     document.addEventListener("DOMContentLoaded", function () {
-        fetch('PageComponents/header.html')
+        fetch('./PageComponents/header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
