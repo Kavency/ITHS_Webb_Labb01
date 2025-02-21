@@ -1,6 +1,6 @@
 function fetchHeaderAndFooter() {
     document.addEventListener("DOMContentLoaded", function () {
-        fetch('./PageComponents/header.html')
+        fetch('https://kavency.github.io/ITHS_Webb_Labb01/PageComponents/header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
