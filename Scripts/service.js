@@ -45,10 +45,10 @@ function displayServices() {
             </button>
             </h2>
             <div id="collapse${service.name}" class="accordion-collapse collapse" aria-labelledby="heading${service.name}" data-bs-parent="#accordionExample">
-            <div class="accordion-body d-lg-flex">
+            <div class="accordion-body d-lg-flex m-2 align-items-center">
             ${service.description}
-            <div class="row justify-items-evenly p-2">
-            <button type="button" class="btn btn-info" onclick='addToCart(${service.id})'>Add to cart. $${service.price}</button>
+            <div class="row justify-items-evenly m-2">
+            <button type="button" class="btn btn-info mt-3 p-2" onclick='addToCart(${service.id})'>Add to cart. $${service.price}</button>
             </div>
             </div>
             </div>
