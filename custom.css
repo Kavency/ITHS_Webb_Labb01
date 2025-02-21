@@ -68,3 +68,11 @@
 #services-accordion-image {
     margin-right: 1rem;
 }
+#about-mail{
+    color: #a5cee8;
+    text-decoration: none;
+}
+#about-mail:hover{
+    color: #f39c12;
+    text-decoration: underline;
+}
