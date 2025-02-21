@@ -1,7 +1,7 @@
 /*  Colours:
     #f39c12 - Orange - Accent
     #222f3d - Darker blue - Header/Footer
-    #34495e - Dark blue - Background
+    #34495e - Medium blue - Background
     #a5cee8 - Lighter blue - Text
 */
 #map{
@@ -40,10 +40,31 @@
     color: #f39c12;
     text-decoration: dotted;
 }
-
 #shoppingCartModal, #shoppingCartModalLabel {
     background-color: #32475d;
     border-color: #f39c12;
     border-width: 2px;
-
+}
+#custom-accordion-body {
+    background-color: #32475d;
+    border-color: #f39c12;
+    border-width: 2px;
+}
+#custom-header-button {
+    background-color: #32475d;
+    color: #a5cee8;
+    border-width: 0px;
+    width: 100%;
+}
+#custom-header-button:active {
+    border-width: 0px;
+}
+#custom-header-button:focus {
+    border-width: 0px;
+}
+#services-accordion-container {
+    padding: 1rem;
+}
+#services-accordion-image {
+    margin-right: 1rem;
 }

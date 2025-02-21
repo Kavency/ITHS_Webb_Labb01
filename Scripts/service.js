@@ -31,11 +31,11 @@ function displayServices() {
     services.forEach(service => {
         let serviceDiv = document.createElement('div');
         serviceDiv.innerHTML = `
-            <div class="accordion-item">
+            <div class="accordion-item" id="custom-accordion-body">
             <h2 class="accordion-header" id="heading${service.name}">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${service.name}" aria-expanded="true" aria-controls="collapse${service.name}">
-            <div class="container"> 
-            <picture>
+            <button id="custom-header-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${service.name}" aria-expanded="true" aria-controls="collapse${service.name}">
+            <div class="container" id="services-accordion-container"> 
+            <picture id="services-accordion-image">
             <source srcset="${service.image}" />
             <img class="img-fluid rounded" width="100px" height="100px" src="${service.imageFallback}"
             alt="A picture of a small dog." />
@@ -48,7 +48,7 @@ function displayServices() {
             <div class="accordion-body d-lg-flex">
             ${service.description}
             <div class="row justify-items-evenly p-2">
-            <button type="button" class="btn btn-primary" onclick='addToCart(${service.id})'>Add to cart. $${service.price}</button>
+            <button type="button" class="btn btn-info" onclick='addToCart(${service.id})'>Add to cart. $${service.price}</button>
             </div>
             </div>
             </div>
