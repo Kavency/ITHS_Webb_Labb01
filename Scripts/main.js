@@ -6,7 +6,7 @@ function fetchHeaderAndFooter() {
                 document.getElementById('header').innerHTML = data;
                 executeScripts(data);
             });
-        fetch('./PageComponents/Footer.html')
+        fetch('PageComponents/Footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer').innerHTML = data;
