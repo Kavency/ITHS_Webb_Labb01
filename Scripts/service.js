@@ -5,24 +5,24 @@ let services = [
         name: 'Clipping',
         description: 'Ensure your pet\'s comfort and health with our professional dog nail clipping service. Gentle, stress-free, and precise, we keep your furry friend\'s paws perfectly groomed. Book an appointment today for a happier, healthier pet!',
         price: 99.0,
-        image: 'images/Clipping.webp',
-        imageFallback: 'images/Clipping.jpg'
+        image: 'https://kavency.github.io/ITHS_Webb_Labb01/Images/Clipping.webp',
+        imageFallback: 'https://kavency.github.io/ITHS_Webb_Labb01/Images/Clipping.jpg'
     },
     {
         id: 2,
         name: 'Trimming',
         description: 'Pamper your furry friend with our expert dog trimming service. We ensure a stylish, comfortable, and stress-free grooming experience, leaving your pet looking and feeling their best. Book now for a fresh, fabulous pup!',
         price: 499.0,
-        image: 'images/Trimming.webp',
-        imageFallback: 'images/Trimming.jpg'
+        image: 'https://kavency.github.io/ITHS_Webb_Labb01/Images/Trimming.webp',
+        imageFallback: 'https://kavency.github.io/ITHS_Webb_Labb01/Images/Trimming.jpg'
     },
     {
         id: 3,
         name: 'Washing',
         description: 'Treat your furry friend to a refreshing dog wash! Our gentle, thorough, and stress-free service leaves your pet clean, soft, and smelling fantastic. Book now for a sparkling clean pup!',
         price: 199.0,
-        image: 'images/Washing.webp',
-        imageFallback: 'images/Washing.jpg'
+        image: 'https://kavency.github.io/ITHS_Webb_Labb01/Images/Washing.webp',
+        imageFallback: 'https://kavency.github.io/ITHS_Webb_Labb01/Images/Washing.jpg'
     }
 ];
 
