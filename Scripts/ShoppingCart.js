@@ -30,7 +30,13 @@ function addToCart(serviceId) {
 }
 
 function removeFromCart(serviceId) {
-    cart = cart.filter(item => item.service.id !== serviceId);
+    let item = cart.find(item => item.service.id === serviceId);
+    if (item.quantity > 1) {
+        item.quantity--;
+    } else {
+        cart = cart.filter(item => item.service.id !== serviceId);
+    }
+
     updateCart();
     saveCart();
 }
@@ -41,8 +47,16 @@ async function updateCart() {
 
     cart.forEach(item => {
         let listItem = document.createElement('li');
-        listItem.innerHTML = `${item.service.name} - $${item.service.price.toFixed(2)} x ${item.quantity} 
-        <button onclick='removeFromCart(${item.service.id})'>Remove</button>`;
+        listItem.innerHTML = `
+        <div class="row justify-content-between p-2">
+            <div class="col-6">
+                ${item.service.name} - $${item.service.price.toFixed(2)} x ${item.quantity} 
+            </div>
+            <div class="col-6">
+                <button class="btn btn-info" onclick='removeFromCart(${item.service.id})'>-</button>
+                <button class="btn btn-info" onclick='addToCart(${item.service.id})'>+</button>
+            </div>
+        </div>`;
         cartItems.appendChild(listItem);
     });
 
