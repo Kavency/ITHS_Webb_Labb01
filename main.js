@@ -1,12 +1,12 @@
 function fetchHeaderAndFooter() {
     document.addEventListener("DOMContentLoaded", function () {
-        fetch('PageComponents/header.html')
+        fetch('./PageComponents/header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
                 executeScripts(data);
             });
-        fetch('PageComponents/footer.html')
+        fetch('./PageComponents/footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer').innerHTML = data;
