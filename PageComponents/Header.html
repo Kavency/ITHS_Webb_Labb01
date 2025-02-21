@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="custom.css" rel="stylesheet">
+    <title>Header</title>
 </head>
 <body>
     <div class="navbar navbar-expand-lg font-monospace" id="customHeaderAndFooter">
@@ -17,15 +18,17 @@
                 Happy Paws
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" "
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="btn btn-info">
+                    <img src="Images/list.svg" alt="List menu icon" width="32" height="32" />
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li>
-                        <a id="active-page" href="index.html">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -37,8 +40,8 @@
             </div>
 
             <!-- Modal Shopping cart -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shoppingCartModal">
-                <img src="Images/cart2.svg" alt="Image of a shopping cart" width="32" height="32" />
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#shoppingCartModal">
+                <img src="Images/cart2.svg" alt="Shopping cart icon" width="35" height="35" />
                 <div id="cartCounter">0</div>
             </button>
             <div class="modal fade" id="shoppingCartModal" tabindex="-1" aria-labelledby="shoppingCartModalLabel"
@@ -65,5 +68,9 @@
             </div>
         </div>
     </div>
+
+
+    <script src="./Scripts/ShoppingCart.js"></script>
+
 </body>
 </html>

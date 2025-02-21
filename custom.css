@@ -2,7 +2,6 @@
     #f39c12 - Orange - Accent
     #222f3d - Darker blue - Header/Footer
     #34495e - Dark blue - Background
-    #2980b9 - Mid blue
     #a5cee8 - Lighter blue - Text
 */
 #map{
@@ -41,7 +40,4 @@
     color: #f39c12;
     text-decoration: dotted;
 }
-#active-page{
-    border-width: 1em;
-    border: #f39c12;
-}
+
