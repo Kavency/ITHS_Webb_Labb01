@@ -5,29 +5,29 @@ let services = [
         name: 'Clipping',
         description: 'Ensure your pet\'s comfort and health with our professional dog nail clipping service. Gentle, stress-free, and precise, we keep your furry friend\'s paws perfectly groomed. Book an appointment today for a happier, healthier pet!',
         price: 99.0,
-        image: 'Images/Clipping.webp',
-        imageFallback: 'Images/Clipping.jpg'
+        image: 'images/Clipping.webp',
+        imageFallback: 'images/Clipping.jpg'
     },
     {
         id: 2,
         name: 'Trimming',
         description: 'Pamper your furry friend with our expert dog trimming service. We ensure a stylish, comfortable, and stress-free grooming experience, leaving your pet looking and feeling their best. Book now for a fresh, fabulous pup!',
         price: 499.0,
-        image: 'Images/Trimming.webp',
-        imageFallback: 'Images/Trimming.jpg'
+        image: 'images/Trimming.webp',
+        imageFallback: 'images/Trimming.jpg'
     },
     {
         id: 3,
         name: 'Washing',
         description: 'Treat your furry friend to a refreshing dog wash! Our gentle, thorough, and stress-free service leaves your pet clean, soft, and smelling fantastic. Book now for a sparkling clean pup!',
         price: 199.0,
-        image: 'Images/Washing.webp',
-        imageFallback: 'Images/Washing.jpg'
+        image: 'images/Washing.webp',
+        imageFallback: 'images/Washing.jpg'
     }
 ];
 
 function displayServices() {
-    let serviceList = document.getElementById('accordionExample');
+    let serviceList = document.getElementById('accordion');
     services.forEach(service => {
         let serviceDiv = document.createElement('div');
         serviceDiv.innerHTML = `
@@ -44,7 +44,7 @@ function displayServices() {
             </div>
             </button>
             </h2>
-            <div id="collapse${service.name}" class="accordion-collapse collapse" aria-labelledby="heading${service.name}" data-bs-parent="#accordionExample">
+            <div id="collapse${service.name}" class="accordion-collapse collapse" aria-labelledby="heading${service.name}" data-bs-parent="#accordion">
             <div class="accordion-body d-lg-flex m-2 align-items-center">
             ${service.description}
             <div class="row justify-items-evenly m-2">
