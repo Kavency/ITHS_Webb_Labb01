@@ -1,12 +1,12 @@
 function fetchHeaderAndFooter() {
     document.addEventListener("DOMContentLoaded", function () {
-        fetch('https://kavency.github.io/ITHS_Webb_Labb01/PageComponents/header.html')
+        fetch('https://kavency.github.io/ITHS_Webb_Labb01/PageComponents/Header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
                 executeScripts(data);
             });
-        fetch('./PageComponents/footer.html')
+        fetch('https://kavency.github.io/ITHS_Webb_Labb01/PageComponents/Footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer').innerHTML = data;
