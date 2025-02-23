@@ -1,6 +1,6 @@
 # Web Development - Labb01.
 ## Welcome to Happy Paws!
-Happy Paws is a web page for a small fictional local dog grooming busines. In this assignment we were tasked with the creaation of a web page using HTML, CSS and JavaScript.
+Happy Paws is a web page for a small fictional local dog grooming business. In this assignment we were tasked with the creaation of a web page using HTML, CSS and JavaScript.
 
 The criteria:
 + Three HTML pages. Home, about and products/services.
