@@ -13,5 +13,6 @@ The criteria:
 + Usage of Bootstrapper Modals or similiar components.
 + Lighthouse result over 90% on performance, accessibility and best practices.
 + Present it using GitHub Pages.
++ Usage of an API.
 
 This is what I came up with: [Happy Paws](https://kavency.github.io/ITHS_Webb_Labb01/index.html)
