@@ -16,3 +16,11 @@ The criteria:
 + Usage of an API.
 
 This is what I came up with: [Happy Paws](https://kavency.github.io/ITHS_Webb_Labb01/index.html)
+
+![image](https://github.com/user-attachments/assets/d9c4b012-9968-4549-bfbc-8d5710feb72e)
+![image](https://github.com/user-attachments/assets/381179e1-421b-4ca3-9d2f-b7092fe4f269)
+![image](https://github.com/user-attachments/assets/f62a5275-0717-4d5e-93ff-db84f1738266)
+![image](https://github.com/user-attachments/assets/7e8e30c1-131a-43e8-b4ee-6859020d5777)
+
+
+
