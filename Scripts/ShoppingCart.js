@@ -24,7 +24,6 @@ function addToCart(serviceId) {
     } else {
         cart.push({ service, quantity: 1 });
     }
-    console.log(cart)
     updateCart();
     saveCart();
 }
@@ -60,6 +59,11 @@ async function updateCart() {
         cartItems.appendChild(listItem);
     });
 
+    updateCartCounter();
+    printTotalPrice();
+}
+
+function updateCartCounter(){
     let cartCounter = document.getElementById('cartCounter');
     let counter = 0;
     cartCounter.innerText = '';
@@ -67,7 +71,9 @@ async function updateCart() {
         counter += item.quantity;
     });
     cartCounter.innerText = counter;
+}
 
+function printTotalPrice(){
     let totalPrice = cart.reduce((total, item) => total + (item.service.price * item.quantity), 0);
     document.getElementById('total-price').innerText = totalPrice.toFixed(2);
 }
