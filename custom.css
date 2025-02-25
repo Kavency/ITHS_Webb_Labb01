@@ -9,8 +9,10 @@
     background-size: cover;
     position: relative;
     overflow: hidden;
-    width: 600px;
-    height: 450px;
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 225px;
+    max-height: 450px;
 }
 
 #customBody{
@@ -40,11 +42,12 @@
     color: #f39c12;
     text-decoration: dotted;
 }
-#shoppingCartModal, #shoppingCartModalLabel {
+#shoppingCartModal {
     background-color: #32475d;
     border-color: #f39c12;
     border-width: 2px;
 }
+
 #custom-accordion-body {
     background-color: #32475d;
     border-color: #f39c12;
@@ -68,11 +71,16 @@
 #services-accordion-image {
     margin-right: 1rem;
 }
-#about-mail{
+#about-mail {
     color: #a5cee8;
     text-decoration: none;
 }
-#about-mail:hover{
+#about-mail:hover {
     color: #f39c12;
     text-decoration: underline;
+}
+#contact-card-bg {
+    border: #f39c12;
+    border-style: solid;
+    border-radius: 0.5rem;
 }
